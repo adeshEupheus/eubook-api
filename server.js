@@ -28,6 +28,7 @@ const ProductRouter = require('./routes/Products')
 const ClassRouter = require('./routes/Class')
 const SubjectRouter = require('./routes/Subject')
 const OrdersRouter = require('./routes/Order')
+const AuthRouter = require('./routes/auth.routes')
 // require('./routes/auth.routes')(app);
 
 
@@ -36,6 +37,7 @@ app.use('/api/product', ProductRouter)
 app.use('/api/class', ClassRouter)
 app.use('/api/subject', SubjectRouter)
 app.use('/api/order', OrdersRouter)
+app.use('/api/auth', AuthRouter)
 
 // set port, listen for requests
 const PORT = process.env.PORT || 5060;

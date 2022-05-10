@@ -47,7 +47,7 @@ module.exports = function(sequelize, DataTypes) {
     sequelize,
     tableName: 'users_master',
     schema: 'users',
-    timestamps: false,
+    timestamps: true,
     indexes: [
       {
         name: "users_master_email_unique",
