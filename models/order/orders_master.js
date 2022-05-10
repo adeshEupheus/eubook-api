@@ -36,6 +36,7 @@ module.exports = function(sequelize, DataTypes) {
       }
     }
   }, {
+    underscored: true,
     sequelize,
     tableName: 'orders_master',
     schema: 'orders',

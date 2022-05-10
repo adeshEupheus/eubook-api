@@ -25,10 +25,11 @@ module.exports = function(sequelize, DataTypes) {
       }
     }
   }, {
+    underscored: true,
     sequelize,
     tableName: 'product_material_type',
     schema: 'product',
-    timestamps: false,
+    timestamps: true,
     indexes: [
       {
         name: "product_material_type_name_index",

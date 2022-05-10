@@ -25,10 +25,11 @@ module.exports = function(sequelize, DataTypes) {
       }
     }
   }, {
+    underscored: true,
     sequelize,
     tableName: 'class_master',
     schema: 'public',
-    timestamps: true,
+    timestamps: false,
     indexes: [
       {
         name: "class_master_name_index",

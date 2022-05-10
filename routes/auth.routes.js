@@ -1,6 +1,6 @@
 const  verifySignUp  = require("../middleware/verifiySignUp");
 const controller = require("../controllers/auth.controller");
-const controller1 = require("../controllers/Product/product");
+const router = require('express').Router()
 const validation = require("../middleware/validation");
 const authJwt = require("../middleware/authJwt");
 
@@ -24,5 +24,5 @@ module.exports = function(app) {
   //   controller.signup
   // );
   app.post("/api/signin",controller.signin);
-  app.post('/create',controller1.create);
+ 
 };

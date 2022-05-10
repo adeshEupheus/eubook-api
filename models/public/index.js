@@ -23,12 +23,12 @@ db.class_master = require("./class_master")(sequelize, Sequelize);
 db.subject_master = require("./subject_master")(sequelize, Sequelize);
 
 
-db.subject_master.belongsTo(db.class_master, { as: "fk_class", foreignKey: "fk_class_id"});
-db.class_master.hasMany(db.subject_master, { as: "subject_masters", foreignKey: "fk_class_id"});
-db.class_master.belongsTo(db.users_master, { as: "created_by_users_master", foreignKey: "created_by"});
-db.users_master.hasMany(db.class_master, { as: "class_masters", foreignKey: "created_by"});
-db.subject_master.belongsTo(db.users_master, { as: "created_by_users_master", foreignKey: "created_by"});
-db.users_master.hasMany(db.subject_master, { as: "subject_masters", foreignKey: "created_by"});
+// db.subject_master.belongsTo(db.class_master, { as: "fk_class", foreignKey: "fk_class_id"});
+// db.class_master.hasMany(db.subject_master, { as: "subject_masters", foreignKey: "fk_class_id"});
+// db.class_master.belongsTo(db.users_master, { as: "created_by_users_master", foreignKey: "created_by"});
+// db.users_master.hasMany(db.class_master, { as: "class_masters", foreignKey: "created_by"});
+// db.subject_master.belongsTo(db.users_master, { as: "created_by_users_master", foreignKey: "created_by"});
+// db.users_master.hasMany(db.subject_master, { as: "subject_masters", foreignKey: "created_by"});
 
 
 

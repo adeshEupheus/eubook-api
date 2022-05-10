@@ -48,6 +48,7 @@ module.exports = function(sequelize, DataTypes) {
       }
     }
   }, {
+    underscored: true,
     sequelize,
     tableName: 'product_master',
     schema: 'product',

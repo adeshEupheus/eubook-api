@@ -25,6 +25,7 @@ module.exports = function(sequelize, DataTypes) {
       }
     }
   }, {
+    underscored: true,
     sequelize,
     tableName: 'series_master',
     schema: 'product',

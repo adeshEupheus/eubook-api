@@ -43,6 +43,7 @@ module.exports = function(sequelize, DataTypes) {
     }
     
   }, {
+    underscored: true,
     sequelize,
     tableName: 'users_master',
     schema: 'users',
